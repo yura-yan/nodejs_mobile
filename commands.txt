@@ -1,0 +1,17 @@
+http POST http://localhost:3000/api/oauth/token grant_type=password client_id=mobileV1 client_secret=abc123456 username=andrey password=simplepassword
+
+http POST http://localhost:3000/api/oauth/token grant_type=refresh_token client_id=mobileV1 client_secret=abc123456 refresh_token=YnzvdmG3O8l+SD0gdoGeNvGXRBb19XnudM9ClnHVVrw=
+
+http http://localhost:3000/api/users Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
+
+
+
+http POST http://localhost:3000/api/articles title="TestArticle2" author="John Doe" description="lorem ipsum dolar sit amet" Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
+
+http http://localhost:3000/api/articles Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
+
+http http://localhost:3000/api/articles/60d0697d060f33150c6a3ab2 Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
+
+http PUT http://localhost:3000/api/articles/60d0697d060f33150c6a3ab2 title="TestArticle3" author="John Doe" description="lorem ipsum dolar sit amet" Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
+
+http DELETE http://localhost:3000/api/articles/60d0697d060f33150c6a3ab2 Authorization:"Bearer MKltirVJ4OPEyE4CWtGU3xD5rZ4dmmpT2NYxr4mPAV8="
